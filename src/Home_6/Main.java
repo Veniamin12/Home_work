@@ -1,6 +1,6 @@
 package Home_6;
 
-public class Main {
+public class    Main {
     public static void main(String[] args) {
         System.out.println(Main.findSymbolOccurance("Hello enter the worlds", 'e'));
         System.out.println(Main.findWordPosition("Hellow wolrd", "olrd"));
