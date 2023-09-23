@@ -1,0 +1,11 @@
+
+INFO, This is an informational message.
+WARNING, This is a warning message.
+ERROR, This is an error message.
+DEBUG, This is a debug message.
+
+
+INFO, This is an informational message.
+WARNING, This is a warning message.
+ERROR, This is an error message.
+DEBUG, This is a debug message.
