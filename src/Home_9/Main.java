@@ -12,7 +12,7 @@ public class Main {
         String logMessage3 = "ERROR, This is an error message.";
         String logMessage4 = "DEBUG, This is a debug message.";
         Main.writeLog(filename, logMessage1, logMessage2, logMessage3, logMessage4);
-        System.out.println(" ");
+         System.out.println(" ");
         System.out.println(Main.readLog(filename));
         System.out.println(" ");
         System.out.println(Main.getLogError(filename, logLevelInfo, logLevelDebug));

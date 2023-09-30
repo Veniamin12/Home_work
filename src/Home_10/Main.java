@@ -45,7 +45,7 @@ public class Main {
         listInteger.add(1);
         listInteger.add(10);
         Main.calcOccurance(list1);
-
+        System.out.println(Main.findOccurance(list1));
 
     }
 
@@ -95,14 +95,23 @@ public class Main {
         }
     }
 
-    public  static List<String> findOccurance (List<String> words){
+    public static List<String> findOccurance(List<String> words) {
         List<String> occList = new ArrayList<>();
-        for (String line : words){
+        List<Integer> count = new ArrayList<>();
+        List<String> findList = new ArrayList<>();
+        for (String line : words) {
             int index = occList.indexOf(line);
-            if(index!=-1){
-                int count= Integer.parseInt(occList.get(index));
+            if (index != -1) {
+                int cnt = count.get(index);
+                count.set(index, cnt + 1);
+            } else {
+                occList.add(line);
+                count.add(1);
             }
         }
-        return occList;
+        for (int i = 0; i < occList.size(); i++) {
+            findList.add(i, "{name:" + occList.get(i) + ", occurrence:" + count.get(i) + "}");
+        }
+        return findList;
     }
 }
